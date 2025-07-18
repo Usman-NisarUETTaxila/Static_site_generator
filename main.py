@@ -12,7 +12,7 @@ html_code = markdown2.markdown(text)
 with open('output.html', 'w', encoding='utf-8') as html_file:
     html_file.write(
         file.render(
-            content="This is the content"
+            content=html_code
         )
     )
 
